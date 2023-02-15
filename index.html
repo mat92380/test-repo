@@ -5,132 +5,143 @@ MIN - Exercice 1 - TP1
 04/03/2021
 -->
 <html>
-    <head>
-        <title>Exercice 1</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- On associe un fichier CSS qui permet de définir la présentation -->
-        <link rel="stylesheet" type="text/css" title="design" href="stockage/fichier_css.css"/>
-        <!-- On  associe une image icone pour l'entête -->
-	    <link rel="icon" type="image/png" href="stockage/icone.png" /> 
-    </head>
-    <body>
-        <!--Logo Epf-->
-        <div id="epf">
-            <img src="stockage/logo_epf_0.png" alt="logo de l'EPF"/>
-        </div>  
-        <!--Début menu-->
-        <div id="menu">
-            <!--On définit la première image en dehors du tableau (sinon le tableau est trop grand en hauteur) -->
-            <img id="image-menu" src="stockage/home-button.png" alt="bouton home"/>
-            <!--Début du tableau menu -->
-            <table id="tmenu">
-                <tr>
-                    <!--Les images de séparateur sont dans 1 case sur 2 (pour séparer les textes)-->
-                    <td><img src="stockage/menu-separator.png" alt="image séparateur"/></td>
-                    <td class="t-text">Intégration HTML</td>
-                    <td><img src="stockage/menu-separator.png" alt="image séparateur"/></td>
-                    <td class="t-text">CSS</td>
-                    <td><img src="stockage/menu-separator.png" alt="image séparateur"/></td>
-                    <td class="t-text">JavaScript</td>
-                    <td><img src="stockage/menu-separator.png" alt="image séparateur"/></td>
-                    <td class="t-text">Php</td>
-                    <td><img src="stockage/menu-separator.png" alt="image séparateur"/></td>
-                    <td class="t-text">Autres ...</td>
-                    <td><img src="stockage/menu-separator.png" alt="image séparateur"/></td>
-                </tr>
-            </table>
-            <!--Fin du tableau menu -->
+
+<head>
+    <title>Exercice 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- On associe un fichier CSS qui permet de définir la présentation -->
+    <link rel="stylesheet" type="text/css" title="design" href="stockage/fichier_css.css" />
+    <!-- On  associe une image icone pour l'entête -->
+    <link rel="icon" type="image/png" href="stockage/icone.png" />
+</head>
+
+<body>
+    <!--Logo Epf-->
+    <!--Logo-->
+
+
+    <div id="epf">
+        <img src="stockage/logo_epf_0.png" alt="logo de l'EPF" />
+    </div>
+    <!--Début menu-->
+    <div id="menu">
+        <!--On définit la première image en dehors du tableau (sinon le tableau est trop grand en hauteur) -->
+        <img id="image-menu" src="stockage/home-button.png" alt="bouton home" />
+        <!--Début du tableau menu -->
+        <table id="tmenu">
+            <tr>
+                <!--Les images de séparateur sont dans 1 case sur 2 (pour séparer les textes)-->
+                <td><img src="stockage/menu-separator.png" alt="image séparateur" /></td>
+                <td class="t-text">Intégration HTML</td>
+                <td><img src="stockage/menu-separator.png" alt="image séparateur" /></td>
+                <td class="t-text">CSS</td>
+                <td><img src="stockage/menu-separator.png" alt="image séparateur" /></td>
+                <td class="t-text">JavaScript</td>
+                <td><img src="stockage/menu-separator.png" alt="image séparateur" /></td>
+                <td class="t-text">Php</td>
+                <td><img src="stockage/menu-separator.png" alt="image séparateur" /></td>
+                <td class="t-text">Autres ...</td>
+                <td><img src="stockage/menu-separator.png" alt="image séparateur" /></td>
+            </tr>
+        </table>
+        <!--Fin du tableau menu -->
+
+
+    </div>
+    <!--Fin menu-->
+    <!--Image nuage-->
+    <div id="nuage">
+        <img src="stockage/01.jpg" alt="alt" />
+    </div>
+    <!--Début du corps -->
+    <div id="corps">
+        <div class="p-contenu"> <!--Classe du premier "bloc" -->
+            <p class="titre">
+                <img src="stockage/html.jpg" alt="html" />
+                <!--Image et titre sont sur la même ligne donc dans le même paragraphe-->
+                Intégration HTML
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adi piscing elit. <!--Le texte est dans un autre paragraphe -->
+                Donec consectetur, nibh ut feugiat placerat, orci lacus accusan erat,
+                eget porttitor arcu velit a lacus. Sed tempus bibendum risus.</p>
+            <!--Le bouton (et le texte qui va avec) sont dans un autre paragraphe (ici le bouton est une image en fond) -->
+            <p class="bouton">Voir le TD</p>
         </div>
-        <!--Fin menu-->
-        <!--Image nuage-->
-        <div id="nuage">
-            <img src="stockage/01.jpg" alt="alt"/>
+        <div class="contenu"> <!--Classe du second "bloc" -->
+            <p class="titre">
+                <img src="stockage/js.jpg" alt="html" />
+                <!--Image et titre sont sur la même ligne donc dans le même paragraphe-->
+                JAVASCRIPT
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adi piscing elit. <!--Le texte est dans un autre paragraphe -->
+                Donec consectetur, nibh ut feugiat placerat, orci lacus accusan erat,
+                eget porttitor arcu velit a lacus. Sed tempus bibendum risus.</p>
+            <!--Le bouton (et le texte qui va avec) sont dans un autre paragraphe (ici le bouton est une image en fond) -->
+            <p class="bouton">Voir le TD</p>
         </div>
-        <!--Début du corps -->
-        <div id="corps">
-            <div class="p-contenu"> <!--Classe du premier "bloc" -->
-                <p class="titre">
-                    <img src="stockage/html.jpg" alt="html"/> <!--Image et titre sont sur la même ligne donc dans le même paragraphe-->
+        <div class="contenu"> <!--Classe du troisieme "bloc" -->
+            <p class="titre">
+                <img src="stockage/ajax.jpg" alt="html" />
+                <!--Image et titre sont sur la même ligne donc dans le même paragraphe-->
+                iQUERY & AJAX
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adi piscing elit. <!--Le texte est dans un autre paragraphe -->
+                Donec consectetur, nibh ut feugiat placerat, orci lacus accusan erat,
+                eget porttitor arcu velit a lacus. Sed tempus bibendum risus.</p>
+            <!--Le bouton (et le texte qui va avec) sont dans un autre paragraphe (ici le bouton est une image en fond) -->
+            <p class="bouton">Voir le TD</p>
+        </div>
+
+    </div>
+    <!--Fin du corps -->
+    <!--Partie du bas -->
+    <div id="corps">
+        <div class="contenubas"> <!--Classe du "bloc" du bas -->
+            <p class="titreTD">
+                Dernier TDs
+            </p>
+            <hr />
+            <div class="contenubas"> <!--Classe du  "bloc" du bas -->
+                <p class="soustitre">
                     Intégration HTML
                 </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adi piscing elit. <!--Le texte est dans un autre paragraphe -->
-                Donec consectetur, nibh ut feugiat placerat, orci lacus accusan erat,
-                eget porttitor arcu velit a lacus. Sed tempus bibendum risus.</p>
-                <!--Le bouton (et le texte qui va avec) sont dans un autre paragraphe (ici le bouton est une image en fond) -->
-                <p class ="bouton">Voir le TD</p> 
-            </div>
-            <div class="contenu"> <!--Classe du second "bloc" -->
-                <p class="titre">
-                    <img src="stockage/js.jpg" alt="html"/> <!--Image et titre sont sur la même ligne donc dans le même paragraphe-->
-                    JAVASCRIPT
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adi piscing elit. <!--Le texte est dans un autre paragraphe -->
-                Donec consectetur, nibh ut feugiat placerat, orci lacus accusan erat,
-                eget porttitor arcu velit a lacus. Sed tempus bibendum risus.</p>
-                <!--Le bouton (et le texte qui va avec) sont dans un autre paragraphe (ici le bouton est une image en fond) -->
-                <p class ="bouton">Voir le TD</p> 
-            </div>
-            <div class="contenu"> <!--Classe du troisieme "bloc" -->
-                <p class="titre">
-                    <img src="stockage/ajax.jpg" alt="html"/> <!--Image et titre sont sur la même ligne donc dans le même paragraphe-->
-                    iQUERY & AJAX
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adi piscing elit. <!--Le texte est dans un autre paragraphe -->
-                Donec consectetur, nibh ut feugiat placerat, orci lacus accusan erat,
-                eget porttitor arcu velit a lacus. Sed tempus bibendum risus.</p>
-                <!--Le bouton (et le texte qui va avec) sont dans un autre paragraphe (ici le bouton est une image en fond) -->
-                <p class ="bouton">Voir le TD</p> 
-            </div>
-            
-        </div>
-        <!--Fin du corps -->
-        <!--Partie du bas -->
-        <div id="corps">
-            <div class="contenubas"> <!--Classe du "bloc" du bas -->
-                <p class="titreTD">
-                    Dernier TDs 
-                </p>
-                <hr/>
-            <div class="contenubas"> <!--Classe du  "bloc" du bas -->
-                <p class="soustitre">
-                    Intégration HTML 
-                </p>
                 <div class="contenubas"> <!--Classe du  "bloc" du bas -->
                     <p class="date">
-                        20 octobre 2020 
+                        20 octobre 2020
                     </p>
-                <hr/>
-            </div>
-            <div class="contenubas"> <!--Classe du  "bloc" du bas -->
-                <p class="soustitre">
-                    Mise en forme CSS 
-                </p>
+                    <hr />
+                </div>
                 <div class="contenubas"> <!--Classe du  "bloc" du bas -->
-                    <p class="date">
-                        13 octobre 2020 
+                    <p class="soustitre">
+                        Mise en forme CSS
                     </p>
-                <hr/>
-                <p class="soustitre">
-                    Decouverte du HTML 
-                </p>
-                <div class="contenubas"> <!--Classe du  "bloc" du bas -->
-                    <p class="date">
-                        6 octobre 2020 
-                    </p>
-                <hr/>
-                
-            </div>
-            
-            <div class="verticalline">
+                    <div class="contenubas"> <!--Classe du  "bloc" du bas -->
+                        <p class="date">
+                            13 octobre 2020
+                        </p>
+                        <hr />
+                        <p class="soustitre">
+                            Decouverte du HTML
+                        </p>
+                        <div class="contenubas"> <!--Classe du  "bloc" du bas -->
+                            <p class="date">
+                                6 octobre 2020
+                            </p>
+                            <hr />
 
-            </div>
-            <div class="apropos">
-                <p class= "titreTD">
-                    A propos
-                </p>
-            </div>
-        </div>
-        
-    </body>
+                        </div>
+
+                        <div class="verticalline">
+
+                        </div>
+                        <div class="apropos">
+                            <p class="titreTD">
+                                A propos
+                            </p>
+                        </div>
+                    </div>
+
+</body>
+
 </html>
